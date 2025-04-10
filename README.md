@@ -9,6 +9,7 @@
 - [Istio Architecture: Data Plane vs Control Plane](./docs/day01/03-ISTIO-ARCHITECTURE.MD)
 - [Envoy Proxy Basics](./docs/day01/04-ENVOY-PROXY-BASICS.MD)
 - [What is mTLS?](./docs/day01/05-WHAT-IS-mTLS.MD)
+- [Istio Networking Basics]()
 
 **Hands-On:**
 - [Set up a Kubernetes cluster (minikube/kind/EKS/GKE)](./labs/day01/01-SETUP-LOCAL-CLUSTER.MD)
