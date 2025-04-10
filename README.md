@@ -9,12 +9,12 @@
 - [Istio Architecture: Data Plane vs Control Plane](./docs/day01/03-ISTIO-ARCHITECTURE.MD)
 - [Envoy Proxy Basics](./docs/day01/04-ENVOY-PROXY-BASICS.MD)
 - [What is mTLS?](./docs/day01/05-WHAT-IS-mTLS.MD)
-- [Istio Networking Basics]()
+- [Istio Networking Basics](./docs/day01/06-ISTIO-NETWORKING-BASICS.md)
 
 **Hands-On:**
 - [Set up a Kubernetes cluster (minikube/kind/EKS/GKE)](./labs/day01/01-SETUP-LOCAL-CLUSTER.MD)
-- [Install Istio using `istioctl`](/labs/day01/02-INSTALL-ISTIO.md)
-- [Verify control plane components](/labs/day01/03-VERIFY-COMPONENTS.md)
+- [Install Istio using `istioctl`](./labs/day01/02-INSTALL-ISTIO.md)
+- [Verify control plane components](./labs/day01/03-VERIFY-COMPONENTS.md)
 
 **Use Cases:**
 - Decoupling traffic management from application code
