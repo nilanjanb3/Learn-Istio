@@ -12,8 +12,8 @@
 
 **Hands-On:**
 - [Set up a Kubernetes cluster (minikube/kind/EKS/GKE)](./labs/day01/01-SETUP-LOCAL-CLUSTER.MD)
-- Install Istio using `istioctl`
-- Verify control plane components
+- [Install Istio using `istioctl`](/labs/day01/02-INSTALL-ISTIO.md)
+- [Verify control plane components](/labs/day01/03-VERIFY-COMPONENTS.md)
 
 **Use Cases:**
 - Decoupling traffic management from application code
