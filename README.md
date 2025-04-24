@@ -24,13 +24,13 @@
 
 ### **Day 2: Istio Traffic Management - Basics**
 **Concepts:**
-- VirtualServices, DestinationRules
-- Traffic Routing: Canary, A/B Testing, Header-based routing
+- [VirtualServices, DestinationRules](./docs/day02/VIRTUAL-SERVICE-DESTINATION-RULE.MD)
+- [Traffic Routing: Canary, A/B Testing, Header-based routing](./docs/day02/CANARY-AB-HEADER-BASED-ROUTING.MD)
 
 **Hands-On:**
-- Deploy a microservices app (Bookinfo)
-- Create traffic rules to route traffic between versions
-- Demo canary deployments
+- [Deploy a microservices app (Bookinfo)](./labs/day02/01-DEPLOY-MS-BOOKINFO.MD)
+- [Create traffic rules to route traffic between versions](./labs/day02/02-TRAFFIC-RULE-BETWEEN-VERSIONS.MD)
+- [Demo canary deployments](./labs/day02/03-DEMO-CANARY-DEPLOYMENT.MD)
 
 **Use Cases:**
 - Progressive delivery strategies in production
