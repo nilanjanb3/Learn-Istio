@@ -131,7 +131,7 @@ To install **Istio** on your Kubernetes cluster using `istioctl`, follow these s
 If you want to remove Istio from your cluster, you can uninstall it using `istioctl`:
 
 ```bash
-istioctl x uninstall --purge
+istioctl uninstall --purge
 ```
 
 Then, remove the Istio-related resources from the cluster:
