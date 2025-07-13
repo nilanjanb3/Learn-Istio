@@ -39,8 +39,8 @@
 
 ### **Day 3: Traffic Management - Advanced**
 **Concepts:**
-- Fault Injection
-- Timeouts and Retries
+- [Fault Injection](./docs/day03/FAULT-INJECTION.md)
+- [Timeouts and Retries](./docs/day03/TIMEOUT-AND-RETRY.md)
 - Circuit Breakers
 - Mirroring Traffic
 

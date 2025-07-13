@@ -70,14 +70,26 @@ To install **Istio** on your Kubernetes cluster using `istioctl`, follow these s
 
 ### Step 4: Test the Istio Installation
 
-1. **Deploy a Sample Application:**
+1. **Install CRDs**
+   Note that the Kubernetes Gateway API CRDs do not come installed by default on most Kubernetes clusters, so make sure they are installed before using the Gateway API:
+   ```bash
+   kubectl get crd gateways.gateway.networking.k8s.io &> /dev/null || \
+   kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.3.0/standard-install.yaml
+
+   ```
+2. Git Clone Istio Into Local
+   ```bash
+   git clone https://github.com/istio/istio.git
+   cd istio
+   ```
+3. **Deploy a Sample Application:**
    To test the Istio installation, deploy a simple application (e.g., `bookinfo`) to the cluster:
 
    ```bash
    kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
    ```
 
-2. **Check the Application Pods:**
+4. **Check the Application Pods:**
    Verify the pods are running for the `bookinfo` application:
 
    ```bash
@@ -86,14 +98,14 @@ To install **Istio** on your Kubernetes cluster using `istioctl`, follow these s
 
    You should see the application pods along with their respective Istio proxy sidecars.
 
-3. **Set Up Ingress Gateway for External Access:**
+5. **Set Up Ingress Gateway for External Access:**
    Expose the application using Istio’s Ingress Gateway:
 
    ```bash
    kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
    ```
 
-4. **Get External IP (if using Minikube or Kind with port forwarding):**
+6. **Get External IP (if using Minikube or Kind with port forwarding):**
    For local setups (like Kind or Minikube), use port forwarding to access the application.
 
    ```bash
