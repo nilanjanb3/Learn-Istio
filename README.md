@@ -41,12 +41,12 @@
 **Concepts:**
 - [Fault Injection](./docs/day03/FAULT-INJECTION.md)
 - [Timeouts and Retries](./docs/day03/TIMEOUT-AND-RETRY.md)
-- Circuit Breakers
-- Mirroring Traffic
+- [Circuit Breakers](./docs/day03/CIRCUIT-BREAKER.md)
+- [Mirroring Traffic](./docs/day03/MIRROR-TRAFFIC.md)
 
 **Hands-On:**
-- Inject faults into service traffic
-- Configure retry/timeouts with failure simulation
+- [Inject faults into service traffic](./labs/day03/01-FAULT-INJECTION.md)
+- [Configure retry/timeouts with failure simulation](./labs/day03/02-TIMEOUT-AND-RETRIES.md)
 - Use `curl` to observe failover behavior
 
 **Use Cases:**

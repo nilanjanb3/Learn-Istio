@@ -1,0 +1,18 @@
+# virtual-service-reviews-abort.yaml
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: reviews-fi
+spec:
+  hosts:
+    - reviews
+  http:
+    - fault:
+        abort:
+          percentage:
+            value: 100.0
+          httpStatus: 500
+      route:
+        - destination:
+            host: reviews
+            subset: v1

@@ -1,0 +1,14 @@
+# virtual-service-reviews-timeout.yaml
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: reviews
+spec:
+  hosts:
+    - reviews
+  http:
+    - route:
+        - destination:
+            host: reviews
+            subset: v1
+      timeout: 30s
