@@ -56,12 +56,12 @@
 
 ### **Day 4: Observability & Telemetry**
 **Concepts:**
-- Metrics, Logs, and Traces
+- [Metrics, Logs, and Traces](./docs/day04/METRIC-LOGS-TRACES.md)
 - Istio integration with:
   - Prometheus
   - Grafana
   - Jaeger
-  - Kiali
+  - [Kiali](./docs/day04/ISTIO-INTEGRATION-WITH-KIALI.md)
 
 **Hands-On:**
 - Deploy observability stack with Istio addons
@@ -76,10 +76,10 @@
 
 ### **Day 5: Istio Security - mTLS and Identity**
 **Concepts:**
-- Zero-trust networking
-- mTLS between services
-- Service-to-service authentication
-- Identity-based authorization (SPIFFE/SPIRE)
+- [Zero-trust networking](./docs/day05/ZERO-TRSUT-NETWORKING.md)
+- [mTLS between services](./docs/day05/MTLS.md)
+- [Service-to-service authentication](./docs/day05/SERVICE-TO-SERVICE-AUTHN.md)
+- [Identity-based authorization (SPIFFE/SPIRE)](./docs/day05/IDENTITY-BASED-AUTHN.md)
 
 **Hands-On:**
 - Enable strict mTLS
