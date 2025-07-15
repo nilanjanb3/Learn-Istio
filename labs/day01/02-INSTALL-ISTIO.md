@@ -102,7 +102,7 @@ To install **Istio** on your Kubernetes cluster using `istioctl`, follow these s
    Expose the application using Istio’s Ingress Gateway:
 
    ```bash
-   https://raw.githubusercontent.com/istio/istio/refs/heads/master/samples/bookinfo/networking/bookinfo-gateway.yaml
+  kubectl apply -f  https://raw.githubusercontent.com/istio/istio/refs/heads/master/samples/bookinfo/networking/bookinfo-gateway.yaml
    ```
 
 6. **Get External IP (if using Minikube or Kind with port forwarding):**
