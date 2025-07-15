@@ -93,9 +93,9 @@
 
 ### **Day 6: Authorization & Policy Enforcement**
 **Concepts:**
-- AuthorizationPolicy
-- Access Control based on JWT, IP, Namespace, etc.
-- Rate limiting (with Envoy or external adapter)
+- [AuthorizationPolicy](./docs/day06/AUTHZ.md)
+- [Access Control based on JWT, IP, Namespace, etc.](./docs/day06/ACCESS-CONTROL.md)
+- [Rate limiting (with Envoy or external adapter)](./docs/day06/RATE-LIMIT.md)
 
 **Hands-On:**
 - Define fine-grained RBAC for services
