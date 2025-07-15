@@ -37,7 +37,8 @@ kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.20/samp
 Run this command to access Kiali locally:
 
 ```bash
-kubectl port-forward svc/kiali -n istio-system 20001:20001
+kubectl patch svc istio-ingressgateway -n istio-system -p '{"spec": {"type": "LoadBalancer"}}'
+
 ```
 
 Now, open your browser and go to:
