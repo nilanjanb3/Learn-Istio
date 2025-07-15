@@ -66,7 +66,7 @@
 **Hands-On:**
 - Deploy observability stack with Istio addons
 - Visualize metrics and traces
-- Use Kiali dashboard to explore the service graph
+- [Use Kiali dashboard to explore the service graph](./labs/day04/01-KIALI.md)
 
 **Use Cases:**
 - SLA/SLO enforcement
@@ -82,9 +82,9 @@
 - [Identity-based authorization (SPIFFE/SPIRE)](./docs/day05/IDENTITY-BASED-AUTHN.md)
 
 **Hands-On:**
-- Enable strict mTLS
-- Verify certificates and secure communication
-- Apply peer & request authentication policies
+- [Enable strict mTLS](./labs/day05/01-MTLS.md)
+- [Verify certificates and secure communication](./labs/day05/02-VERIFY-CERTIFICATE.md)
+- [Apply peer & request authentication policies](./labs/day05/03-PEER-AUTHN.md)
 
 **Use Cases:**
 - Enforcing secure comms in regulated environments
