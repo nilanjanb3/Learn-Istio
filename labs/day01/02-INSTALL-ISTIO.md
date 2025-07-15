@@ -77,7 +77,7 @@ To install **Istio** on your Kubernetes cluster using `istioctl`, follow these s
    kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.3.0/standard-install.yaml
 
    ```
-2. Git Clone Istio Into Local
+2. Git Clone Istio Into Local (Optional)
    ```bash
    git clone https://github.com/istio/istio.git
    cd istio
@@ -86,7 +86,7 @@ To install **Istio** on your Kubernetes cluster using `istioctl`, follow these s
    To test the Istio installation, deploy a simple application (e.g., `bookinfo`) to the cluster:
 
    ```bash
-   kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
+   kubectl apply -f https://raw.githubusercontent.com/istio/istio/refs/heads/master/samples/bookinfo/platform/kube/bookinfo.yaml
    ```
 
 4. **Check the Application Pods:**
@@ -102,7 +102,7 @@ To install **Istio** on your Kubernetes cluster using `istioctl`, follow these s
    Expose the application using Istio’s Ingress Gateway:
 
    ```bash
-   kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
+   https://raw.githubusercontent.com/istio/istio/refs/heads/master/samples/bookinfo/networking/bookinfo-gateway.yaml
    ```
 
 6. **Get External IP (if using Minikube or Kind with port forwarding):**
