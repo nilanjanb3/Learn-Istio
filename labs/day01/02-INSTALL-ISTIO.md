@@ -101,7 +101,7 @@ To install **Istio** on your Kubernetes cluster using `istioctl`, follow these s
 5. **Set Up Ingress Gateway for External Access:**
    Expose the application using Istio’s Ingress Gateway:
 
-   ```bash
+  ```bash
   kubectl apply -f  https://raw.githubusercontent.com/istio/istio/refs/heads/master/samples/bookinfo/networking/bookinfo-gateway.yaml
    ```
 
