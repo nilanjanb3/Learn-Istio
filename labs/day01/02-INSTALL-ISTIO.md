@@ -110,6 +110,10 @@ To install **Istio** on your Kubernetes cluster using `istioctl`, follow these s
 
    ```bash
    kubectl port-forward svc/istio-ingressgateway -n istio-system 8080:80
+
+   or
+   
+   minikube tunnel
    ```
 
    Then, you can access the application at `http://localhost:8080`.
@@ -120,9 +124,35 @@ To install **Istio** on your Kubernetes cluster using `istioctl`, follow these s
 
    ```bash
    curl http://localhost:8080/productpage
+
+   curl http://localhost/productpage [If used minikube tunnel]
    ```
 
    This should return the HTML for the `bookinfo` application.
+```bash
+127.0.0.1 (Your Host)
+    │
+    ▼
+[minikube tunnel]
+    │
+    ▼
+[istio-ingressgateway LoadBalancer Service]
+    │
+    ▼
+[Istio IngressGateway (Envoy proxy)]
+    │
+    ▼
+[Istio Gateway Resource]
+    │
+    ▼
+[Istio VirtualService]
+    │
+    ▼
+[Kubernetes Service (ClusterIP)]
+    │
+    ▼
+[Pod (Your App)]
+```
 
 2. You can also verify Istio's control over traffic by observing the logs of the Istio proxy sidecars or using Istio’s telemetry features.
 
