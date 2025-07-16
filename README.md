@@ -127,10 +127,10 @@
 
 ### **Day 8: Istio in Production**
 **Concepts:**
-- Best practices for production deployments
-- Istio upgrades and versioning
-- Configuration profiles
-- Multi-tenancy and multi-cluster deployment overview
+- [Best practices for production deployments](./docs/day08/ISTIO-PRODUCTION.md)
+- [Istio upgrades and versioning](./docs/day08/ISTIO-UPGRADE-AND-VERSIONING.md)
+- [Configuration profiles](./docs/day08/ISTIO-PROFILES.md)
+- [Multi-tenancy and multi-cluster deployment overview](./docs/day08/MULTI-TENANCY.md)
 
 **Hands-On:**
 - Use revision-based upgrades
