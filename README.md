@@ -109,10 +109,11 @@
 
 ### **Day 7: Ingress Gateway, Egress, and TLS Termination**
 **Concepts:**
-- Istio Gateway vs Kubernetes Ingress
-- TLS termination
-- Egress traffic control
-- External service access
+- [Istio Gateway vs Kubernetes Ingress](./docs/day07/ISTIO-GATEWAY-VS-K8S-INGRESS.md)
+- [Istio Gateway vs Istio Ingress Gateway](./docs/day07/ISTIO-GATEWAY-VS-ISTIO-INGRESS-GATEWAY.md) 
+- [TLS termination](./docs/day07/TLS.TERMINATION.md)
+- [Egress traffic control](./docs/day07/EGRESS-TRAFFIC.md)
+- [External service access](./docs/day07/EXTERNAL-SERVICE.md)
 
 **Hands-On:**
 - Configure Istio Ingress Gateway
